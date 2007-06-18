@@ -1,0 +1,12 @@
+category: Net
+requires: cygwin glib2 gtk2-x11 libdbus-glib_1_2 libglade2
+sdesc: "Telepathy connection manager inspector"
+ldesc: "Telepathy Inspector is a telepathy client (GTK+) whose objective 
+is to expose all interfaces and functionalities implemented by a given 
+connection manager along with its connections, channels, etc.
+
+The idea is to enable the user (likely to be a Telepathy developer) to
+easily view and access all methods and interfaces of all Telepathy
+entities (CMs, connect ions, etc), which could not be easily achieved
+using a regular telepathy client since it would (and should!) hide all
+Telepathy logic behind a pleasant, usability oriented, GUI."

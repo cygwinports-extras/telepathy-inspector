@@ -1,0 +1,89 @@
+telepathy-inspector
+------------------------------------------
+Telepathy Inspector is a telepathy client (GTK+) whose objective is to 
+expose all interfaces and functionalities implemented by a given 
+connection manager along with its connections, channels, etc.
+
+The idea is to enable the user (likely to be a Telepathy developer) to 
+easily view and access all methods and interfaces of all Telepathy 
+entities (CMs, connect ions, etc), which could not be easily achieved 
+using a regular telepathy client since it would (and should!) hide all 
+Telepathy logic behind a pleasant, usability oriented, GUI.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  glib2-2.12.12-1
+  gtk2-x11-2.10.12-1
+  libdbus-glib_1_2-0.73-1
+  libglade2-2.6.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gcc-core-3.4.4-3
+  scons-0.97-1
+
+Canonical website:
+  http://telepathy.freedesktop.org/wiki/TelepathyInspector
+
+Canonical download:
+  http://downloads.sourceforge.net/tapioca-voip/
+
+-------------------------------------------
+
+Build instructions:
+  unpack telepathy-inspector-0.5.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./telepathy-inspector-0.5.0-X.cygport all
+
+This will create:
+  /usr/src/telepathy-inspector-0.5.0-X-src.tar.bz2
+  /usr/src/telepathy-inspector-0.5.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/telepathy-inspector.exe
+  /usr/share/doc/Cygwin/telepathy-inspector-0.5.0.README
+  /usr/share/doc/telepathy-inspector-0.5.0/COPYING
+  /usr/share/doc/telepathy-inspector-0.5.0/ChangeLog
+  /usr/share/doc/telepathy-inspector-0.5.0/INSTALL
+  /usr/share/doc/telepathy-inspector-0.5.0/README
+  /usr/share/telepathy-inspector/dlg-add-members.xml
+  /usr/share/telepathy-inspector/dlg-advertise-caps.xml
+  /usr/share/telepathy-inspector/dlg-get-handles.xml
+  /usr/share/telepathy-inspector/dlg-get-text.xml
+  /usr/share/telepathy-inspector/dlg-handles-list.xml
+  /usr/share/telepathy-inspector/dlg-hold-handles.xml
+  /usr/share/telepathy-inspector/dlg-preferences.xml
+  /usr/share/telepathy-inspector/dlg-request-channel.xml
+  /usr/share/telepathy-inspector/dlg-request-conn.xml
+  /usr/share/telepathy-inspector/dlg-set-aliases.xml
+  /usr/share/telepathy-inspector/dlg-user-status.xml
+  /usr/share/telepathy-inspector/page-active-conns.xml
+  /usr/share/telepathy-inspector/page-aliasing.xml
+  /usr/share/telepathy-inspector/page-capabilities.xml
+  /usr/share/telepathy-inspector/page-channel-group.xml
+  /usr/share/telepathy-inspector/page-channel-text.xml
+  /usr/share/telepathy-inspector/page-presence.xml
+  /usr/share/telepathy-inspector/page-properties.xml
+  /usr/share/telepathy-inspector/page-room-list.xml
+  /usr/share/telepathy-inspector/wnd-channel.xml
+  /usr/share/telepathy-inspector/wnd-connection.xml
+  /usr/share/telepathy-inspector/wnd-main.xml
+
+------------------
+
+Port Notes:
+
+----- version 0.5.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
