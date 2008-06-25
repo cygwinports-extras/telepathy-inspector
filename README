@@ -11,19 +11,25 @@ using a regular telepathy client since it would (and should!) hide all
 Telepathy logic behind a pleasant, usability oriented, GUI.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.12-1
-  gtk2-x11-2.10.12-1
-  libdbus-glib_1_2-0.73-1
-  libglade2-2.6.0-1
+  cygwin-1.5.25-15
+  glib2-2.16.3-1
+  gtk2-x11-2.12.10-1
+  libdbus-glib_1_2-0.74-1
+  libglade2-2.6.2-1
+  libtelepathy-glib0-0.7.10-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  binutils-20060817-1
-  cygport-0.2.11-1
+  autoconf2.5-2.61-1
+  automake1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  scons-0.97-1
+  libtool-2.2.2-2
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
 
 Canonical website:
   http://telepathy.freedesktop.org/wiki/TelepathyInspector
@@ -34,26 +40,28 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack telepathy-inspector-0.5.0-X-src.tar.bz2
+  unpack telepathy-inspector-0.5.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./telepathy-inspector-0.5.0-X.cygport all
+  cygport ./telepathy-inspector-0.5.2-X.cygport all
 
 This will create:
-  /usr/src/telepathy-inspector-0.5.0-X-src.tar.bz2
-  /usr/src/telepathy-inspector-0.5.0-X.tar.bz2
+  /usr/src/telepathy-inspector-0.5.2-X-src.tar.bz2
+  /usr/src/telepathy-inspector-0.5.2-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/telepathy-inspector.exe
-  /usr/share/doc/Cygwin/telepathy-inspector-0.5.0.README
-  /usr/share/doc/telepathy-inspector-0.5.0/COPYING
-  /usr/share/doc/telepathy-inspector-0.5.0/ChangeLog
-  /usr/share/doc/telepathy-inspector-0.5.0/INSTALL
-  /usr/share/doc/telepathy-inspector-0.5.0/README
+  /usr/share/doc/telepathy-inspector-0.5.2/AUTHORS
+  /usr/share/doc/telepathy-inspector-0.5.2/COPYING
+  /usr/share/doc/telepathy-inspector-0.5.2/ChangeLog
+  /usr/share/doc/telepathy-inspector-0.5.2/INSTALL
+  /usr/share/doc/telepathy-inspector-0.5.2/NEWS
+  /usr/share/doc/telepathy-inspector-0.5.2/README
+  /usr/share/man/man1/telepathy-inspector.1.gz
   /usr/share/telepathy-inspector/dlg-add-members.xml
   /usr/share/telepathy-inspector/dlg-advertise-caps.xml
   /usr/share/telepathy-inspector/dlg-get-handles.xml
@@ -70,9 +78,12 @@ Files included in the binary package:
   /usr/share/telepathy-inspector/page-capabilities.xml
   /usr/share/telepathy-inspector/page-channel-group.xml
   /usr/share/telepathy-inspector/page-channel-text.xml
+  /usr/share/telepathy-inspector/page-hold.xml
+  /usr/share/telepathy-inspector/page-media-signalling.xml
   /usr/share/telepathy-inspector/page-presence.xml
   /usr/share/telepathy-inspector/page-properties.xml
   /usr/share/telepathy-inspector/page-room-list.xml
+  /usr/share/telepathy-inspector/page-streamed-media.xml
   /usr/share/telepathy-inspector/wnd-channel.xml
   /usr/share/telepathy-inspector/wnd-connection.xml
   /usr/share/telepathy-inspector/wnd-main.xml
@@ -80,6 +91,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.5.2-1 -----
+Version bump.
 
 ----- version 0.5.0-1 -----
 Initial release for Cygwin.

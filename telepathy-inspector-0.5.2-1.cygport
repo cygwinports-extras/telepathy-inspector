@@ -1,0 +1,5 @@
+inherit gnome2
+
+DESCRIPTION="Telepathy connection manager inspection tool"
+HOMEPAGE="http://telepathy.freedesktop.org/wiki/TelepathyInspector"
+SRC_URI="http://telepathy.freedesktop.org/releases/${PN}/${P}.tar.gz"
