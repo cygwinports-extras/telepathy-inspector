@@ -12,18 +12,18 @@ Telepathy logic behind a pleasant, usability oriented, GUI.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  glib2-2.16.3-1
-  gtk2-x11-2.12.10-1
-  libdbus-glib_1_2-0.74-1
-  libglade2-2.6.2-1
-  libtelepathy-glib0-0.7.10-1
+  glib2-2.16.5-1
+  gtk2-x11-2.12.11-1
+  libdbus-glib_1_2-0.76-1
+  libglade2-2.6.3-1
+  libtelepathy-glib0-0.7.14-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.61-1
   automake1.10-1.10.1-1
-  binutils-20080523-1
-  cygport-0.3.11-1
+  binutils-20080524-2
+  cygport-0.3.13-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool-2.2.2-2
@@ -40,27 +40,27 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack telepathy-inspector-0.5.2-X-src.tar.bz2
+  unpack telepathy-inspector-0.5.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./telepathy-inspector-0.5.2-X.cygport all
+  cygport ./telepathy-inspector-0.5.3-X.cygport all
 
 This will create:
-  /usr/src/telepathy-inspector-0.5.2-X-src.tar.bz2
-  /usr/src/telepathy-inspector-0.5.2-X.tar.bz2
+  /usr/src/telepathy-inspector-0.5.3-X-src.tar.bz2
+  /usr/src/telepathy-inspector-0.5.3-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/telepathy-inspector.exe
-  /usr/share/doc/telepathy-inspector-0.5.2/AUTHORS
-  /usr/share/doc/telepathy-inspector-0.5.2/COPYING
-  /usr/share/doc/telepathy-inspector-0.5.2/ChangeLog
-  /usr/share/doc/telepathy-inspector-0.5.2/INSTALL
-  /usr/share/doc/telepathy-inspector-0.5.2/NEWS
-  /usr/share/doc/telepathy-inspector-0.5.2/README
+  /usr/share/doc/telepathy-inspector-0.5.3/AUTHORS
+  /usr/share/doc/telepathy-inspector-0.5.3/COPYING
+  /usr/share/doc/telepathy-inspector-0.5.3/ChangeLog
+  /usr/share/doc/telepathy-inspector-0.5.3/INSTALL
+  /usr/share/doc/telepathy-inspector-0.5.3/NEWS
+  /usr/share/doc/telepathy-inspector-0.5.3/README
   /usr/share/man/man1/telepathy-inspector.1.gz
   /usr/share/telepathy-inspector/dlg-add-members.xml
   /usr/share/telepathy-inspector/dlg-advertise-caps.xml
@@ -91,6 +91,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.5.3-1 -----
+Version bump.
 
 ----- version 0.5.2-1 -----
 Version bump.
