@@ -1,5 +1,5 @@
 category: Net
-requires: cygwin glib2 gtk2-x11 libdbus-glib_1_2 libglade2 libtelepathy-glib0
+requires: glib2 gtk2-x11 libdbus-glib_1_2 libglade2 libtelepathy-glib0
 sdesc: "Telepathy connection manager inspector"
 ldesc: "Telepathy Inspector is a telepathy client (GTK+) whose objective 
 is to expose all interfaces and functionalities implemented by a given 
